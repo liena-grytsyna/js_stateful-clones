@@ -30,6 +30,8 @@ function transformStateWithClones(state, actions) {
         currentState = newState;
         break;
       }
+      default:
+        break;
     }
 
     history.push({ ...currentState });
